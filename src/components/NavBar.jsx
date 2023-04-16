@@ -47,7 +47,7 @@ const NavBar = () => {
   return () => window.removeEventListener('scroll', handleScroll);
  }, []);
  return (
-  <div className=' container mx-auto  navbarContainer flex justify-between w-full p-4 lg:px-40 md:px-5'>
+  <div className=' container mx-auto  navbarContainer flex justify-between w-full p-4 lg:px-40 md:px-5 z-50'>
    <div></div>
    <div className='hidden sm:flex sm:gap-8'>
     <a href="#home" onClick={() => setActiveSection('home')}><p className={`navbar_menu ${activeSection === 'home' ? 'active' : ''}`}>Home</p></a>
